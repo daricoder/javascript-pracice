@@ -69,6 +69,7 @@ const difference = array1
 // console.log([].reduce((acumulator,current)=> acumulator+current,1 ))
 
 // sort
+// su sintaxis: arr.sort([compareFunction])
 
 /* 
 - Modifica el mismo arreglo ordenandolo.
@@ -130,7 +131,8 @@ const desc = [...items].sort((a, b) => a.value - b.value);
 // console.log(desc);
 
 
-const ref = items.sort();
+// comparando referencia del sort
+// const ref = items.sort();
 
-console.log(ref==items,ref===items)
+// console.log(ref==items,ref===items) // los dos dan true
 // con esto comprobamos que la referencia es la misma para comparar referenias se usa == o === da lo mismo porque la utilidad de == y === es para otras cosas
